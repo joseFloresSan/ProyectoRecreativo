@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">Aplicacion en linea</string>
-    <string name="action_entrar">Entrar</string>
-    <string name="action_salir">Salir</string>
+    <string name="app_name">ProyectoDocente</string>
 </resources>

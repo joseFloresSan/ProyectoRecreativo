@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.login">
+    package="com.example.proyectodocente">
 
     <application
         android:allowBackup="true"
@@ -9,23 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PRINCIPAL.frmregistrardocente"></activity>
-        <activity android:name=".PRINCIPAL.frmresgistraralumno" />
+        <service
+            android:name=".ControladorRecursos.ControladorRecurso"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".principalCuentos" />
 
         <service
-            android:name=".CONTROLADOR.estudiantecontrolador"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".CONTROLADOR.personalcontrolador"
+            android:name=".ControladorDocente.DocenteControlador"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".PRINCIPAL.frmprincipalpersonal" />
-        <activity android:name=".PRINCIPAL.frmprincipalestudiante" />
-        <activity android:name=".PRINCIPAL.frmloginestudiante" />
-        <activity android:name=".PRINCIPAL.frmloginadmin" />
-        <activity android:name=".PRINCIPAL.index">
+        <activity android:name=".principalDocente" />
+        <activity android:name=".loginDocente">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
